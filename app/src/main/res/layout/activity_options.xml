@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal"
+        android:id="@+id/radioNormal"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_below="@+id/radioEasy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        android:id="@+id/radioEasy"
+        android:checked="true"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:accessibilityLiveRegion="polite"
+        android:allowUndo="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hard"
+        android:id="@+id/radioHard"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_below="@+id/radioNormal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extreme"
+        android:id="@+id/radioExtreme"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioHard"
+        android:layout_alignParentLeft="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRAZY"
+        android:id="@+id/radioCrazy"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_below="@+id/radioExtreme"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60 Sec"
+        android:id="@+id/radio60"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/radioExtreme"
+        android:layout_alignLeft="@+id/radio45"
+        android:layout_alignStart="@+id/radio45"
+        android:layout_alignRight="@+id/radio30"
+        android:layout_alignEnd="@+id/radio30" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45 Sec"
+        android:id="@+id/radio45"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_above="@+id/radioExtreme"
+        android:layout_alignLeft="@+id/radio30"
+        android:layout_alignStart="@+id/radio30"
+        android:layout_alignRight="@+id/radio30"
+        android:layout_alignEnd="@+id/radio30" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 Sec"
+        android:id="@+id/radio30"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_below="@+id/radio10"
+        android:layout_alignLeft="@+id/radio10"
+        android:layout_alignStart="@+id/radio10"
+        android:layout_alignRight="@+id/radio10"
+        android:layout_alignEnd="@+id/radio10" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Sec"
+        android:id="@+id/radio10"
+        android:checked="true"
+        android:textSize="30dp"
+        android:layout_above="@+id/radioNormal"
+        android:layout_toRightOf="@+id/radioExtreme" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90 Sec"
+        android:id="@+id/radio90"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_below="@+id/radio60"
+        android:layout_alignLeft="@+id/radio60"
+        android:layout_alignStart="@+id/radio60"
+        android:layout_alignRight="@+id/radio45"
+        android:layout_alignEnd="@+id/radio45" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Min"
+        android:id="@+id/radio10m"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_below="@+id/radio60"
+        android:layout_alignLeft="@+id/radio90"
+        android:layout_alignStart="@+id/radio90" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 Min"
+        android:id="@+id/radio5m"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/radio60"
+        android:layout_alignLeft="@+id/radio60"
+        android:layout_alignStart="@+id/radio60" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Min"
+        android:id="@+id/radio3m"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_above="@+id/radioExtreme"
+        android:layout_toRightOf="@+id/radioExtreme"
+        android:layout_toEndOf="@+id/radioExtreme" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Min"
+        android:id="@+id/radio2m"
+        android:checked="false"
+        android:textSize="30dp"
+        android:layout_above="@+id/radio45"
+        android:layout_alignLeft="@+id/radio45"
+        android:layout_alignStart="@+id/radio45" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Min"
+        android:id="@+id/radio1m"
+        android:checked="true"
+        android:textSize="30dp"
+        android:layout_above="@+id/radio30"
+        android:layout_alignLeft="@+id/radio30"
+        android:layout_alignStart="@+id/radio30" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/b_div"
+        android:textSize="110dp"
+        android:minHeight="160dp"
+        android:minWidth="160dp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/icon_divide" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/b_sub"
+        android:textSize="110dp"
+        android:minHeight="160dp"
+        android:minWidth="160dp"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/b_div"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/icon_minus" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/b_sum"
+        android:textSize="110dp"
+        android:minHeight="160dp"
+        android:minWidth="160dp"
+        android:textStyle="bold|italic"
+        android:layout_alignTop="@+id/b_sub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/icon_plus" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/b_mul"
+        android:textSize="110dp"
+        android:textStyle="bold|italic"
+        android:layout_alignBottom="@+id/b_div"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/icon_multiply" />
+</RelativeLayout>

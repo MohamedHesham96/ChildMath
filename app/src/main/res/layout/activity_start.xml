@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/b_Time"
+        android:textSize="33sp"
+        android:text="Hero of Time "
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#2643d4"
+        android:background="@drawable/button"
+        android:layout_marginTop="200dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/b_speed"
+        android:textSize="33sp"
+        android:text="Hero of Speed "
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#2643d4"
+        android:background="@drawable/button"
+        android:layout_marginTop="100dp"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/b_normal"
+        android:textSize="33sp"
+        android:text="Noraml Hero"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#2643d4"
+        android:background="@drawable/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/b_tran"
+        android:textSize="33sp"
+        android:text="Hero Tranning"
+        android:textColor="#2643d4"
+        android:background="@drawable/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="300dp" />
+
+</RelativeLayout>

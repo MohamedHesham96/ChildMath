@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#003b80"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="265dp"
+            android:layout_height="80dp"
+            android:id="@+id/tv_score"
+            android:textSize="60dp"
+            android:background="@android:drawable/ic_notification_overlay"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+
+            android:text="0"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Score"
+            android:id="@+id/textView6"
+            android:textSize="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff700"
+            android:layout_gravity="center_horizontal|top"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="Home"
+            android:id="@+id/b_home"
+            android:textSize="25dp"
+            android:layout_alignTop="@+id/b_ng"
+            android:layout_alignLeft="@+id/tv_score"
+            android:layout_alignStart="@+id/tv_score"
+            android:layout_gravity="left|bottom" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:text="New Game"
+            android:id="@+id/b_ng"
+            android:textSize="25dp"
+            android:layout_below="@+id/tv_score"
+            android:layout_marginTop="20dp"
+            android:layout_alignRight="@+id/tv_score"
+            android:layout_alignEnd="@+id/tv_score"
+            android:layout_gravity="right|bottom"
+            android:enabled="true" />
+    </FrameLayout>
+</RelativeLayout>
